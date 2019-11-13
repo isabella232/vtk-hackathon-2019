@@ -215,7 +215,7 @@ In this workshop our queueing system is [PubSub](https://cloud.google.com/pubsub
 
 ##### Setup the PubSub items in the cloud console.
 
-Create a topic and a subscription for both hotels and for rates. Do this in the [Cloud console](https://console.cloud.google.com), look for the `PubSub` part in the listview under the hamburger menu. Click on `Create topic` to make topics:
+Create a topic and a subscription for both hotels and for rates and in both cases per destination. This will make it easier to process items. Do this in the [Cloud console](https://console.cloud.google.com), look for the `PubSub` part in the listview under the hamburger menu. Click on `Create topic` to make topics:
 
 ![Topics](docs_images/topic_create.png)
 
