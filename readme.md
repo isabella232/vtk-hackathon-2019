@@ -1,3 +1,7 @@
+# Link to the introductionary slides:
+
+https://docs.google.com/presentation/d/1a5kHcL-DkfTdehOOt2PwkriqDsTRolHus6msF090kZE/edit?usp=sharing
+
 # 0. Gcloud SDK setup
 
 In order to work with Google Cloud services, you'll need to install the Gcloud SDK and have a Google (@gmail.com) account.
