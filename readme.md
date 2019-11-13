@@ -154,7 +154,7 @@ Run your crawler and look at the logs, they will contain the items you generate.
 Once you (think you) have the spider done (**to reiterate, focus on Amsterdam only for the time being**) and it's yielding dicts for each hotels, you can run it with a flag to store every item being yielded in a json file locally (which you'll read in a next stage). In this case the results are small enough to save on disk on a file, in real life scenario's (and at our scale) this if of course not the case, but it'll work well here and is easy to work with and inspect. Run it with the output flag like this:
 
 ```bash
-scrapy crawl ota_hotels -o hotels.json
+scrapy crawl hotels -o hotels.json
 ```
 
 Note that successive runs will append to this file and not overwrite is, so it's best to remove or rename it after you made changes to your crawler.
