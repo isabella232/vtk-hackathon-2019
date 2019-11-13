@@ -43,7 +43,7 @@ Start by looking around a bit on the site. It's a very simple website with regar
 
 #### Setup
 
-In order to start, you can checkout the skeleton repository on [Github: blank scraping repo](blank_scraping_repo). This contains a Scrapy project with the blanks in the code for you to fill in. In order to run it, you'll need to have Python installed. Make a virtual environment for this project and install the requirements for it:
+In order to start, you can checkout this repository. This contains a Scrapy project with the blanks in the code for you to fill in. In order to run it, you'll need to have Python installed. Make a virtual environment for this project and install the requirements for it:
 
 ```bash
 mkvirtualenv workshop-scrapy
