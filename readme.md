@@ -159,6 +159,8 @@ scrapy crawl hotels -o hotels.json
 
 Note that successive runs will append to this file and not overwrite is, so it's best to remove or rename it after you made changes to your crawler.
 
+Eventually, the hotels information will need to be put into bigquery as well for analysis later. You can do this after the transform step has been implemented; it's not a very large dataset so you can read the json you just generated and push it to pubsub or write to biguery in a single run.
+
 #### Scale it up
 
 Once you can succesfully crawl hotels and their info, you'll want to speed it up, and do some more requests concurrenctly. Otherwise you won't be able to get all the data in time. Have a look at `workshop/workshop/settings.py` to tweak some of the settings to increase the throughput.
