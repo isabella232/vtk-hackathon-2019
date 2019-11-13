@@ -18,6 +18,12 @@ If you have set this up, call us and we will grant each member of your group acc
 
 If you run into issues with software setup, give us a call and we'll have a look at the start of the event.
 
+You'll also need to run this so your python libraries are using your account as well. If you have a permission error, this should be fixing it.
+
+```
+gcloud auth application-default login
+```
+
 # 1. Introduction
 
 The goal of the workshop is to extract data from a website, push that data onto a queueing system to process and clean it, store it in a large-scale database, and then run some analysis on the extracted dataset.
@@ -209,7 +215,10 @@ Add the hotels from Brussels. You should get an error when scraping rates there.
 
 Once you start working with more data, you can't keep working with dumping to files locally. You'll likely distribute crawlers over multiple machines, scale them up and down on demand, and have them generate different kind (of subsets) of data. In this step you'll start pushing items to a queueing system. At the other end of the queueing there will be code to handle each item, in our case simply writing them to a database. You could also use this component (which we call the 'transform' step) to write each item to multiple destinations, do some statistics counting, raise alerting when some kind of items are being seen, sample items to write to a staging system or backup location ... Separating the functionality allows to scale both components independantly, write each one in the language of framework which suits its best, develop separate components faster versus having one giant piece of code which does 'everything'...
 
+
 In this workshop our queueing system is [PubSub](https://cloud.google.com/pubsub/) and the database is [BigQuery](https://cloud.google.com/bigquery/). Both are managed, highly scalable cloud offerings so you don't need to handle infrastructure management yourself.
+
+Note: the quickstart docs are using an asynchronous method to pull data. There is also a synchronuous way, described on [https://googleapis.dev/python/pubsub/latest/subscriber/index.html#pulling-a-subscription-synchronously](https://googleapis.dev/python/pubsub/latest/subscriber/index.html#pulling-a-subscription-synchronously) which is easier to debug when you run into issues.
 
 #### Push items to pubsub from the crawler
 
