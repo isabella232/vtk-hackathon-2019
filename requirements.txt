@@ -1,0 +1,7 @@
+Scrapy
+arrow
+google-cloud-pubsub==0.39.1
+google-cloud-bigquery
+ipdb
+beautifulsoup4
+html5lib
