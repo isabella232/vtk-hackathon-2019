@@ -218,8 +218,6 @@ Once you start working with more data, you can't keep working with dumping to fi
 
 In this workshop our queueing system is [PubSub](https://cloud.google.com/pubsub/) and the database is [BigQuery](https://cloud.google.com/bigquery/). Both are managed, highly scalable cloud offerings so you don't need to handle infrastructure management yourself.
 
-Note: the quickstart docs are using an asynchronous method to pull data. There is also a synchronuous way, described on [https://googleapis.dev/python/pubsub/latest/subscriber/index.html#pulling-a-subscription-synchronously](https://googleapis.dev/python/pubsub/latest/subscriber/index.html#pulling-a-subscription-synchronously) which is easier to debug when you run into issues.
-
 #### Push items to pubsub from the crawler
 
 ##### Setup the PubSub items in the cloud console.
@@ -261,6 +259,10 @@ From the cloud console, you can manually push and pull message from topics and s
 ## 2.b Transformation step
 
 #### Pull items in python script ...
+
+
+*Note: the quickstart docs are using an asynchronous method to pull data. There is also a synchronuous way, described on [https://googleapis.dev/python/pubsub/latest/subscriber/index.html#pulling-a-subscription-synchronously](https://googleapis.dev/python/pubsub/latest/subscriber/index.html#pulling-a-subscription-synchronously) which is easier to debug when you run into issues.*
+
 
 *Note: If you didn't get the crawler to push to pubsub yet, you can make a simple python script to generate dummy messages (but with the right structure), and push these to your pubsub topic. That way you can do this part simultaneously.*
 
