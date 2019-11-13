@@ -63,7 +63,7 @@ pip install -r requirements.txt
 Each project has a remote machine to work with if locally your setup gives issues. Log in via SSH like this
 
 ```bash
-gcloud beta compute --project <your-project-name> ssh --zone "europe-west1-c" "scrapy-vm-1"
+gcloud beta compute --project <your-project-name> ssh --zone "europe-west1-c" "scrapy-vm"
 ```
 
 To copy files to the remote machine, do e.g.
