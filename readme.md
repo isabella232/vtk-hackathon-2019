@@ -68,7 +68,7 @@ gcloud beta compute --project <your-project-name> ssh --zone "europe-west1-c" "s
 
 To copy files to the remote machine, do e.g.
 ```bash
-gcloud compute scp --project <your-project-name> --zone "europe-west1-c" --recurse /Users/mhindery/repositories/otainsight/hackathon-scrapy/ scrapy-vm:~/
+gcloud compute scp --project <your-project-name> --zone "europe-west1-c" --recurse /Users/mhindery/repositories/otainsight/hackathon-scrapy/ scrapy-vm:~/data
 ```
 
 ### 2.a.1 Get all the available hotels and their properties present on the site
